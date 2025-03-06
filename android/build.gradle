@@ -39,6 +39,7 @@ android {
 }
 
 dependencies {
+    compileOnly fileTree(dir: 'libs', include: ['*.aar'])
     implementation(name: "oppwa.mobile-release", ext: 'aar')
     debugImplementation(name: "ipworks3ds_sdk", ext: 'aar')
     releaseImplementation(name: "ipworks3ds_sdk_deploy", ext: 'aar')
